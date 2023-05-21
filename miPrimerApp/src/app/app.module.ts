@@ -8,16 +8,18 @@ import { navbarcomponent } from './navbar/navbar.component';
 import { ChildComponent } from './navbar/header/header.component';
 import { VentanaPruebaComponent } from './ventana-prueba/ventana-prueba.component';
 import { VentanaHijaComponent } from './ventana-hija/ventana-hija.component';
+import { IndexComponent } from './index/index.component';
 @NgModule({
   declarations: [
-    AppComponent,EmpleadosComponent,navbarcomponent,ChildComponent, VentanaPruebaComponent, VentanaHijaComponent
+    AppComponent,EmpleadosComponent,navbarcomponent,ChildComponent, VentanaPruebaComponent, VentanaHijaComponent, IndexComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path:'Prueba',component:VentanaPruebaComponent},
-      {path:'Hija',component:VentanaHijaComponent}
+      // {path:'',component:navbarcomponent},
+      // {path:'Prueba',component:VentanaPruebaComponent},
+      // {path:'Hija',component:VentanaHijaComponent}
     ])
   ],
   providers: [],
