@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { IndexComponent } from 'src/app/index/index.component';
+import { IndexComponent } from 'src/app/layouts/index/index.component';
 
 const routes: Routes = [
   {
@@ -15,20 +15,22 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('src/app/index/index.component').then(m => m.IndexComponent)
+        loadChildren: () => import('src/app/layouts/index/index.module').then(m => m.IndexModule)
       } ]
 
-},];
+},
+{
+  path: '**',
+  redirectTo: 'dashboard',
+}];
 
 @NgModule({
   imports: [
-    CommonModule,
-    BrowserModule,
-    RouterModule.forRoot(routes,{
-      useHash: true
-    })
+ 
+    RouterModule.forRoot(routes)
   ],
   exports: [
+    RouterModule
   ],
 })
 export class AppRoutingModule { }
