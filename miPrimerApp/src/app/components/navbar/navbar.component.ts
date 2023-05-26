@@ -1,23 +1,10 @@
-import { Component, ViewChild, AfterViewInit } from "@angular/core";
+import { Component } from '@angular/core';
 
-
-@Component(
-{
- selector:"app-navbar",
- templateUrl:"./navbar.component.html",
- styleUrls:['./navbar.component.css']
-  
-
-
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class navbarcomponent implements AfterViewInit
- {
-    
-
-     constructor(){}
-
-     ngAfterViewInit() {
-         
-     }
+export class NavbarComponent {
 
 }

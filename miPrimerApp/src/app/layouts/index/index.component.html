@@ -1,12 +1,19 @@
+<div class="position-absolute w-100 min-height-300 top-0" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
+  <span class="mask bg-primary opacity-6"></span>
+</div>
+
+<app-sidebar class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main"></app-sidebar>
 
 
-<app-navbar class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main"></app-navbar>
-<div class="main-content">
+
+<div class="main-content position-relative max-height-vh-100 h-100">
   <!-- Top navbar -->
+ <app-navbar  >
 
+ </app-navbar>
   <!-- Pages -->
   <router-outlet></router-outlet>
-  <div class="container-fluid">
+  
   <app-footer></app-footer>
-  </div>
+  
 </div>
