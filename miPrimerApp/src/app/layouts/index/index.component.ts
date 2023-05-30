@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { AedMascotaComponent } from 'src/app/pages/aed-mascota/aed-mascota.component';
+import { MascotasComponent } from 'src/app/pages/mascotas/mascotas.component';
 
 
 
 
-import {MatDialog} from '@angular/material/dialog';
+
 
 
 @Component({
@@ -13,6 +15,10 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class IndexComponent {
    
+
+  
+   
+
  
 
 
