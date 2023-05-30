@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index.component';
 import { VentanaPruebaComponent } from 'src/app/ventana-prueba/ventana-prueba.component';
 import { VentanaHijaComponent } from 'src/app/ventana-hija/ventana-hija.component';
+import { MascotasComponent } from 'src/app/pages/mascotas/mascotas.component';
 
 
 
@@ -14,7 +15,7 @@ import { VentanaHijaComponent } from 'src/app/ventana-hija/ventana-hija.componen
  export const IndexRoutingModule: Routes = [
   { path: 'profile',      component: VentanaPruebaComponent },
   { path: 'dashboard',   component: VentanaHijaComponent },
-  // { path: 'tables',         component: TablesComponent },
+  { path: 'mascotas',    component: MascotasComponent },
   // { path: 'icons',          component: IconsComponent },
   // { path: 'maps',           component: MapsComponent }
 ];
