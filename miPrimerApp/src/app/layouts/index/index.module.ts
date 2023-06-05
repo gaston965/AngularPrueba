@@ -18,6 +18,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { DateAdapter } from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
+import {MatSort, MatSortModule} from '@angular/material/sort';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 
@@ -38,8 +44,13 @@ import {MatCardModule} from '@angular/material/card';
     ReactiveFormsModule,
     MatRadioModule,
     MatButtonModule,
-    MatCardModule
-    
+    MatCardModule,
+    MatTableModule,
+
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatSortModule,
+
    
     
     // ,MatToolbarModule,MatIconModule,MatDialogModule,MatButtonModule

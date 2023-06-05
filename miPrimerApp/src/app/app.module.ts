@@ -11,6 +11,7 @@ import { IndexComponent } from './layouts/index/index.component';
 import { ComponentsModule } from './components/components.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent, IndexComponent
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ComponentsModule,
     BrowserAnimationsModule,
     
-    HttpClientModule
+    HttpClientModule,
+    
 
   ],
   providers: [],

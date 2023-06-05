@@ -40,6 +40,15 @@
       "peso": 23,
       "fechaDeNacimiento": "2023-06-13T03:00:00.000Z",
       "id": 3
+    },
+    {
+      "nombre": "gaston",
+      "edad": 12,
+      "raza": "pollo",
+      "peso": 111,
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "id": 4
     }
-  ]
+  ],
+  "listMascota":[]
 }
