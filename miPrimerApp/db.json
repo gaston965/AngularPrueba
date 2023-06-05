@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "aedmascota": [
+    {
+      "nombre": "Nando",
+      "edad": 12,
+      "raza": "Vereda",
+      "peso": 120,
+      "fechaDeNacimiento": "2023-06-14T03:00:00.000Z",
+      "id": 1
+    },
+    {
+      "nombre": "",
+      "edad": "",
+      "raza": "",
+      "peso": "",
+      "fechaDeNacimiento": "",
+      "id": 2
+    },
+    {
+      "nombre": "coso",
+      "edad": 23,
+      "raza": "Pavimento",
+      "peso": 23,
+      "fechaDeNacimiento": "2023-06-13T03:00:00.000Z",
+      "id": 3
+    }
+  ]
+}

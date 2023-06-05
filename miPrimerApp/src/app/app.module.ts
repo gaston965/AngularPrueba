@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { IndexComponent } from './layouts/index/index.component';
 
 import { ComponentsModule } from './components/components.module';
@@ -20,7 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     RouterModule,
     ComponentsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
+    HttpClientModule
 
   ],
   providers: [],

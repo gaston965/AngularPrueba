@@ -1,33 +1,61 @@
 <div mat-dialog-title>
-    <h1>Mascota</h1>
+  <div class="rowPropia"> 
+  <h1 style="margin-right: 2em;">Mascota</h1>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        
+        <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+      </mat-card-title-group>
+    </mat-card-header>
+   
+  </mat-card>
+  </div>
 </div>
-<form>
+
+<!-- -->
+
+  <form  [formGroup]="mascForm" (ngSubmit)="onFormSubmit()" >
 <div mat-dialog-content class="content">
   <div class="rowPropia">
-    <mat-form-field appearance="outline">
+    <mat-form-field >
       <mat-label>Nombre</mat-label>
-      <input matInput type="tex" placeholder="Nombre">
+      <input matInput type="tex" placeholder="Nombre" formControlName="nombre">
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field >
        <mat-label>Edad</mat-label>
-       <input matInput type="number" placeholder="Edad">
+       <input matInput type="number" placeholder="Edad" formControlName="edad">
      </mat-form-field>
   </div>
   <div class="rowPropia">
-    <mat-form-field appearance="outline">
+    <mat-form-field >
+      <mat-label>Raza</mat-label>
+      <input matInput type="tex" placeholder="Raza" formControlName="raza">
+    </mat-form-field>
+    <mat-form-field >
+       <mat-label>Peso</mat-label>
+       <input matInput type="number" placeholder="Peso" formControlName="peso">
+     </mat-form-field>
+  </div>
+  <div class="rowPropia">
+    <mat-form-field color="accent"  >
+      <mat-label>Fecha de Nacimiento</mat-label>
+      <input matInput [matDatepicker]="picker2" formControlName="fechaDeNacimiento">
+      <mat-hint>DD/MM/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2 color="primary"></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="visibility: hidden;">
       <mat-label>Raza</mat-label>
       <input matInput type="tex" placeholder="Nombre">
     </mat-form-field>
-    <mat-form-field appearance="outline">
-       <mat-label>Peso</mat-label>
-       <input matInput type="number" placeholder="Peso">
-     </mat-form-field>
+
   </div>
 </div>
 
 <div mat-dialog-actions class="action">
-  <button mat-raised-button>Cancelar</button>
-  <button mat-raised-button color="primary">Guardar</button> 
+  <button mat-raised-button type="button" mat-dialog-close>Cancelar</button>
+  <button mat-raised-button color="primary" type="submit">Guardar</button> 
    
 </div>
 </form>
