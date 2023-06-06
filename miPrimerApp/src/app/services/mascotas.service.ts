@@ -18,6 +18,6 @@ export class MascotasService {
 
    listmascota(): Observable<any>
    {
-    return this._http.get('http://http://localhost:3000/listMascota');
+    return this._http.get('http://localhost:3000/aedmascota');
    }
 }

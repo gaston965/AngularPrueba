@@ -15,27 +15,33 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 })
 export class MascotasComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
-  dataSource: MatTableDataSource<any>;
+  displayedColumns: string[] = [ 'nombre', 'edad', 'raza','peso','fechaDeNacimiento','id'];
+  dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(private _dialog:MatDialog, private _empService:MascotasService){}
-  
+  openAddEditEmpForm() {
+    this._dialog.open(AedMascotaComponent);
+  } 
+ 
+ 
   ngOnInit(): void {
     this.listmascota();
   }
+
+
   
-  openAddEditEmpForm() {
-    this._dialog.open(AedMascotaComponent);
-  }
+ 
 
   listmascota()
   {
     this._empService.listmascota().subscribe({
       next(res) {
-        console.log(res)
+        this.dataSource = new MatTableDataSource(res);
+        this.dataSource.sort=this.sort;
+        this.dataSource.paginator = this.paginator;
       },
       error:(err) => {
         console.log(err)
@@ -46,5 +52,14 @@ export class MascotasComponent implements OnInit {
     })
   }
   
+applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
 
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+
+
+}
 }

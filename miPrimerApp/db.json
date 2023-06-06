@@ -48,7 +48,190 @@
       "peso": 111,
       "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
       "id": 4
+    },
+    {
+      "nombre": "Gaston",
+      "edad": 32,
+      "raza": "Veremos",
+      "peso": 145,
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "id": 5
+    },
+    {
+      "nombre": "Gaston",
+      "edad": 45,
+      "raza": "Perro",
+      "peso": 12,
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "id": 6
+    },
+    {
+      "nombre": "Roxana",
+      "edad": 42,
+      "raza": "Rubia",
+      "peso": 65,
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "id": 7
+    },
+    {
+      "nombre": "gfgfg",
+      "edad": 12,
+      "raza": "dsds",
+      "peso": 123,
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "id": 8
+    },
+    {
+      "nombre": "sdsd",
+      "edad": 223,
+      "raza": "sdsd",
+      "peso": 2323,
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "id": 9
+    },
+    {
+      "nombre": "34344",
+      "edad": 232,
+      "raza": "232",
+      "peso": 12,
+      "fechaDeNacimiento": "2023-06-14T03:00:00.000Z",
+      "id": 10
+    },
+    {
+      "nombre": "fdf",
+      "edad": 232,
+      "raza": "23233",
+      "peso": 23232,
+      "fechaDeNacimiento": "2023-06-22T03:00:00.000Z",
+      "id": 11
+    },
+    {
+      "nombre": "12212",
+      "edad": 121,
+      "raza": "1212",
+      "peso": 1223,
+      "fechaDeNacimiento": "2023-06-21T03:00:00.000Z",
+      "id": 12
+    },
+    {
+      "nombre": "sdsds",
+      "edad": 222,
+      "raza": "sdsd",
+      "peso": 2222,
+      "fechaDeNacimiento": "2023-06-21T03:00:00.000Z",
+      "id": 13
+    },
+    {
+      "nombre": "dsdsds",
+      "edad": 222,
+      "raza": "DSD",
+      "peso": 2333,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 14
+    },
+    {
+      "nombre": "232",
+      "edad": 2323,
+      "raza": "WEWEWE",
+      "peso": null,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 15
+    },
+    {
+      "nombre": "122",
+      "edad": 122,
+      "raza": "122",
+      "peso": 222,
+      "fechaDeNacimiento": "2023-06-27T03:00:00.000Z",
+      "id": 16
+    },
+    {
+      "nombre": "asas",
+      "edad": 121,
+      "raza": "1212",
+      "peso": 112,
+      "fechaDeNacimiento": "2023-06-21T03:00:00.000Z",
+      "id": 17
+    },
+    {
+      "nombre": "45454",
+      "edad": 45454,
+      "raza": "dsds",
+      "peso": 323,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 18
+    },
+    {
+      "nombre": "lklklk22",
+      "edad": 232,
+      "raza": "LKLK",
+      "peso": 2323,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 19
+    },
+    {
+      "nombre": "2323",
+      "edad": 232,
+      "raza": "232",
+      "peso": 232,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 20
+    },
+    {
+      "nombre": "232",
+      "edad": 232,
+      "raza": "232",
+      "peso": 232,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 21
+    },
+    {
+      "nombre": "sdsd",
+      "edad": 222,
+      "raza": "wewe",
+      "peso": null,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 22
+    },
+    {
+      "nombre": "2323",
+      "edad": 4545,
+      "raza": "2323",
+      "peso": 4545,
+      "fechaDeNacimiento": "2023-06-29T03:00:00.000Z",
+      "id": 23
+    },
+    {
+      "nombre": "sdsdds",
+      "edad": 44545,
+      "raza": "sdsd",
+      "peso": 4545,
+      "fechaDeNacimiento": "2023-06-14T03:00:00.000Z",
+      "id": 24
+    },
+    {
+      "nombre": "sdsd",
+      "edad": 23,
+      "raza": "2222",
+      "peso": 2222,
+      "fechaDeNacimiento": "2023-06-27T03:00:00.000Z",
+      "id": 25
+    },
+    {
+      "nombre": "ddf",
+      "edad": 233,
+      "raza": "2232",
+      "peso": 2323,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 26
+    },
+    {
+      "nombre": "jhjhj",
+      "edad": 4232,
+      "raza": "87887",
+      "peso": null,
+      "fechaDeNacimiento": "2023-06-21T03:00:00.000Z",
+      "id": 27
     }
-  ],
-  "listMascota":[]
+  ]
 }
