@@ -232,6 +232,62 @@
       "peso": null,
       "fechaDeNacimiento": "2023-06-21T03:00:00.000Z",
       "id": 27
+    },
+    {
+      "nombre": "cancela",
+      "edad": "",
+      "raza": "gghghh",
+      "peso": 233,
+      "fechaDeNacimiento": "2023-06-22T03:00:00.000Z",
+      "id": 28
+    },
+    {
+      "nombre": "fddff",
+      "edad": 12,
+      "raza": "casarasa",
+      "peso": 12,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 29
+    },
+    {
+      "nombre": "dfdfdf",
+      "edad": 222,
+      "raza": "sdsd",
+      "peso": 222,
+      "fechaDeNacimiento": "2023-06-28T03:00:00.000Z",
+      "id": 30
+    },
+    {
+      "nombre": "dfdf",
+      "edad": 23,
+      "raza": "sfd",
+      "peso": 23,
+      "fechaDeNacimiento": "2023-06-29T03:00:00.000Z",
+      "id": 31
+    },
+    {
+      "nombre": "dfd",
+      "edad": 23,
+      "raza": "sds",
+      "peso": 123,
+      "fechaDeNacimiento": "2023-06-15T03:00:00.000Z",
+      "id": 32
+    },
+    {
+      "nombre": "dfdfdf",
+      "edad": 23,
+      "raza": "fdfd",
+      "peso": 222,
+      "fechaDeNacimiento": "2023-06-29T03:00:00.000Z",
+      "id": 33
+    },
+    {
+      "nombre": "Exe",
+      "edad": 12,
+      "raza": "Vereda",
+      "peso": 123,
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "id": 34
     }
   ]
 }

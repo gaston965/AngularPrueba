@@ -3,11 +3,20 @@ import {MatDialog} from '@angular/material/dialog';
 
 import { AedMascotaComponent } from 'src/app/pages/aed-mascota/aed-mascota.component';
 import { MascotasService } from 'src/app/services/mascotas.service';
-import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
-import {MatSort, MatSortModule} from '@angular/material/sort';
-import {MatTableDataSource, MatTableModule} from '@angular/material/table';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
+
+export interface MascotaInterface {
+  nombre: string;
+  edad: number;
+  raza: string;
+  peso: number;
+  fechaDeNacimiento:string;
+  id:string;
+}
+
+
 @Component({
   selector: 'app-mascotas',
   templateUrl: './mascotas.component.html',
@@ -16,9 +25,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 export class MascotasComponent implements OnInit {
 
   displayedColumns: string[] = [ 'nombre', 'edad', 'raza','peso','fechaDeNacimiento','id'];
-  dataSource!: MatTableDataSource<any>;
+  dataSource!: MatTableDataSource<MascotaInterface>;
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(private _dialog:MatDialog, private _empService:MascotasService){}
@@ -30,18 +39,18 @@ export class MascotasComponent implements OnInit {
   ngOnInit(): void {
     this.listmascota();
   }
-
-
-  
- 
-
   listmascota()
   {
     this._empService.listmascota().subscribe({
-      next(res) {
+      next:(res)=> {
+       
+      
         this.dataSource = new MatTableDataSource(res);
+        // console.log(this.dataSource)
         this.dataSource.sort=this.sort;
+        
         this.dataSource.paginator = this.paginator;
+       
       },
       error:(err) => {
         console.log(err)
