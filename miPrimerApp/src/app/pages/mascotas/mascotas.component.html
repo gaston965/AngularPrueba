@@ -3,19 +3,29 @@
        
           
         
-            
+      <div class="container-fluid py-4">
+    
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0">
+
         
           
   
           
               
             
+               
+             
+              
                 <h6>Tabla de Mascotas</h6>
            
                 <button mat-raised-button (click)="openAddEditEmpForm()">AgregarMascota </button>
-             
-              <div class="container-fluid">
+                 </div>
+           <div class="container-fluid py-4 "> 
+                
                 <mat-form-field   >
+
                   <mat-label>Filter</mat-label>
                   <input matInput (keyup)="applyFilter($event)"  placeholder="Ex. Mia" #input>
                 </mat-form-field>
@@ -90,7 +100,9 @@
                 <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
               </div>
         
-   
+      </div>
+          </div>
+        </div>   
      
   
   
