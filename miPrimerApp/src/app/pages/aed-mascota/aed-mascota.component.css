@@ -30,5 +30,27 @@ button
     background-size: cover;
   }
 
+    #image-button {
+        display: inline-block;
+        /* width: 100px;
+        height: 100px; */
+        cursor: pointer;
+        overflow: hidden;
+      }
+  
+      #file-input {
+       display: none;
+      }
+
+
+mat-radio-group
+{
+    display: flex;
+    /* flex-direction: column;  */
+    /* margin: 15px 0; */
+    /* align-items: flex-start; */
+
+}
+
 
   

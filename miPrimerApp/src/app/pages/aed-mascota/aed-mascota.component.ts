@@ -6,6 +6,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MascotasService } from 'src/app/services/mascotas.service';
 import { Dialog, DialogRef } from '@angular/cdk/dialog';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 @Component({
@@ -15,7 +16,8 @@ import { Dialog, DialogRef } from '@angular/cdk/dialog';
   
 })
 export class AedMascotaComponent {
-   
+ 
+
   mascForm:FormGroup;
 
   constructor(private _fb:FormBuilder,
@@ -26,8 +28,11 @@ export class AedMascotaComponent {
           nombre:'',
           edad:'',
           raza:'',
-          peso:'',
-          fechaDeNacimiento:''
+          sexo:'',
+          especie:'',
+          color:'',
+          fechaDeNacimiento:'',
+          peso:''
 
 
 
@@ -53,4 +58,31 @@ export class AedMascotaComponent {
                  console.error(err);
          }
           
-       })}}}
+       })}
+    }
+      
+  
+    imageUrl: string | ArrayBuffer | null = 'https://material.angular.io/assets/img/examples/shiba2.jpg';
+    selectedFile: File | null = null;
+    handleImageClick() {
+      // Aquí puedes realizar cualquier acción necesaria al hacer clic en la imagen.
+      console.log('Haz hecho clic en la imagen');
+    }
+    
+    handleFileInput(event: any) {
+      const file = event.target.files[0];
+      this.selectedFile = file;
+  
+      const reader = new FileReader();
+  
+      reader.onload = (event: any) => {
+        this.imageUrl = event.target.result;
+        // Aquí puedes realizar cualquier acción necesaria con la URL de la imagen cargada.
+        console.log('URL de la imagen cargada:', this.imageUrl);
+      };
+  
+      reader.readAsDataURL(file);
+    }
+  
+  
+  }

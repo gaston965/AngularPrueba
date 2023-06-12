@@ -3,10 +3,13 @@
   <h1 style="margin-right: 2em;">Mascota</h1>
   <mat-card class="example-card">
     <mat-card-header>
-      <mat-card-title-group>
+      <mat-card-title-group >
         
-        <!-- <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > -->
-       <!-- <input type="file"> -->
+      
+       <label id="image-button" for="file-input">
+        <img mat-card-md-image  [src]="imageUrl" title="Seleccione una imagen" alt="Imagen" width="100" height="100" (click)="handleImageClick()">
+      </label>
+      <input  id="file-input" type="file" accept="image/*" (change)="handleFileInput($event)"> 
       </mat-card-title-group>
     </mat-card-header>
    
@@ -33,27 +36,46 @@
       <mat-label>Raza</mat-label>
       <input matInput type="tex" placeholder="Raza" formControlName="raza">
     </mat-form-field>
-    <mat-form-field >
-       <mat-label>Peso</mat-label>
-       <input matInput type="number" placeholder="Peso" formControlName="peso">
-     </mat-form-field>
+  
+      <mat-form-field >
+        <mat-label>Especie</mat-label>
+        <input matInput type="tex" placeholder="Especie" formControlName="especie">
+      </mat-form-field>
+
   </div>
   <div class="rowPropia">
+    <mat-form-field >
+      <mat-label>Color</mat-label>
+      <input matInput type="tex" placeholder="Color" formControlName="color">
+    </mat-form-field>
     <mat-form-field color="accent"  >
       <mat-label>Fecha de Nacimiento</mat-label>
       <input matInput [matDatepicker]="picker2" formControlName="fechaDeNacimiento">
       <mat-hint>DD/MM/YYYY</mat-hint>
       <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
       <mat-datepicker #picker2 color="primary"></mat-datepicker>
-    </mat-form-field>
-    <mat-form-field appearance="outline" style="visibility: hidden;">
-      <mat-label>Raza</mat-label>
-      <input matInput type="tex" placeholder="Nombre">
-    </mat-form-field>
+    </mat-form-field> 
+   </div>
+   <div class="rowPropia">
+     <div class="container-fluid">
+       <mat-label> Sexo</mat-label>
+        <mat-radio-group formControlName="sexo">
+          <mat-radio-button value="macho">Macho</mat-radio-button>
+          <mat-radio-button value="hembra">Hembra</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    
 
+    <mat-form-field >
+      <mat-label>Peso</mat-label>
+      <input matInput type="number" step="0.01" placeholder="Peso" formControlName="peso">
+      <mat-hint>eje: 12.5 Kg</mat-hint>
+    </mat-form-field>
   </div>
-</div>
 
+
+
+</div>
 <div mat-dialog-actions class="action">
   <button mat-raised-button type="button" mat-dialog-close>Cancelar</button>
   <button mat-raised-button color="primary" type="submit">Guardar</button> 

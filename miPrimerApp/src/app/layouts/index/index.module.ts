@@ -17,7 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { DateAdapter } from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
-
+import {NgFor} from '@angular/common';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatSort, MatSortModule} from '@angular/material/sort';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
@@ -47,7 +47,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatCardModule,
     MatTableModule,
     MatPaginatorModule,
-    
+    NgFor,
     MatFormFieldModule,
     MatSortModule,
 
