@@ -1,21 +1,27 @@
-    <div class="container-fluid py-4">
     
-        <div class="col-12">
-          <div class="card mb-4">
-            <div class="card-header pb-0">
-              <h6>Tabla de Mascotas</h6>
-           
-              <button mat-raised-button (click)="openAddEditEmpForm()">AgregarMascota </button>
-              <!-- (keyup)="applyFilter($event)" -->
-            </div>
-           <div class="container-fluid py-4 "> 
-              <mat-form-field  >
-                <mat-label>Filter</mat-label>
-                <input matInput (keyup)="applyFilter($event)"  placeholder="Ex. Mia" #input>
-              </mat-form-field>
+    
+       
+          
+        
+            
+        
+          
+  
+          
               
-              <div class="mat-elevation-z8">
-                <table mat-table [dataSource]="dataSource" matSort>
+            
+                <h6>Tabla de Mascotas</h6>
+           
+                <button mat-raised-button (click)="openAddEditEmpForm()">AgregarMascota </button>
+             
+              <div class="container-fluid">
+                <mat-form-field   >
+                  <mat-label>Filter</mat-label>
+                  <input matInput (keyup)="applyFilter($event)"  placeholder="Ex. Mia" #input>
+                </mat-form-field>
+                <div class="table-container">
+                 
+                <table  mat-table [dataSource]="dataSource"  matSort>
               
             
               
@@ -44,6 +50,16 @@
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Especie </th>
                     <td mat-cell *matCellDef="let row"> {{row.especie}} </td>
                   </ng-container>
+                  <ng-container matColumnDef="Acciones">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Acciones </th>
+                    <td mat-cell *matCellDef="let row"> 
+                    <button mat-icon-button>
+
+                      <mat-icon></mat-icon>
+                    </button>  
+                    
+                    </td>
+                  </ng-container>
                   <ng-container matColumnDef="Color">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Color </th>
                     <td mat-cell *matCellDef="let row"> {{row.color}} </td>
@@ -54,7 +70,7 @@
                   </ng-container>
                   <ng-container matColumnDef="FechaDeNacimiento">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> FechaDeNacimiento </th>
-                    <td mat-cell *matCellDef="let row"> {{row.fechaDeNacimiento}} </td>
+                    <td mat-cell *matCellDef="let row"> {{row.fechaDeNacimiento| date}}  </td>
                   </ng-container>
                         <!-- ID Column -->
                         <ng-container matColumnDef="Id">
@@ -70,15 +86,10 @@
                     <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
                   </tr>
                 </table>
-              
+                </div>
                 <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
               </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      <!-- </div> -->
+        
    
      
   

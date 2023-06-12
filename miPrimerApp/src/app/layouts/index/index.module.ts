@@ -23,6 +23,7 @@ import {MatSort, MatSortModule} from '@angular/material/sort';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -50,6 +51,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     NgFor,
     MatFormFieldModule,
     MatSortModule,
+    MatIconModule
 
    
     

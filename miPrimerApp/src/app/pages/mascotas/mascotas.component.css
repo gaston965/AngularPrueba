@@ -1,12 +1,17 @@
-table {
-    width: 100%;
-  }
+
   
-  .mat-mdc-form-field {
+   .mat-mdc-form-field {
     font-size: 14px;
     width: 100%;
+  } 
+   
+  mat-paginator
+  {
+
+    width: 50%;
   }
-  
-  td, th {
-    width: 25%;
+  .table-container
+  {
+    width: 200px;
   }
+

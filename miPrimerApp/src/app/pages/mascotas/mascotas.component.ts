@@ -27,7 +27,7 @@ export interface MascotaInterface {
 })
 export class MascotasComponent implements OnInit {
 
-  displayedColumns: string[] = [ 'Id','Nombre', 'Edad', 'Raza','Especie','Color','FechaDeNacimiento','Sexo','Peso'];
+  displayedColumns: string[] = [ 'Nombre', 'Edad', 'Raza','Especie','Color','FechaDeNacimiento','Sexo','Peso','Acciones'];
   dataSource!: MatTableDataSource<MascotaInterface>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
