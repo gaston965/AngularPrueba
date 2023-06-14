@@ -63,6 +63,17 @@ export class MascotasComponent implements OnInit {
 
     })
   }
+
+  deleteMascota(id:number)
+  {
+   this._empService.deleteMascota(id).subscribe({
+    next:(res) =>{
+      alert('Mascota eliminada')
+    },
+    error:console.log,});
+
+
+  }
   
 applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
