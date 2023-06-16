@@ -35,7 +35,20 @@ export class MascotasComponent implements OnInit {
 
   constructor(private _dialog:MatDialog, private _empService:MascotasService){}
   openAddEditEmpForm() {
-    this._dialog.open(AedMascotaComponent);
+    const dialogRef=this._dialog.open(AedMascotaComponent);
+
+    dialogRef.afterClosed().subscribe({
+      next: (val) =>
+      {
+        if (val)
+        {
+          this.listmascota();
+        }
+      }
+
+
+
+    })
   } 
  
  
@@ -85,4 +98,22 @@ applyFilter(event: Event) {
 
 
 }
+
+editMascota(data : any) {
+  const dialogRef=this._dialog.open(AedMascotaComponent,{
+   data,
+
+
+
+
+
+
+  });
+
+  
+} 
+
+
+
+
 }

@@ -16,6 +16,13 @@ export class MascotasService {
 
    }
 
+
+   editMascota(id:number,data:any):Observable<any>
+   {
+   return this._http.put(`http://localhost:3000/aedmascota/${id}`,data);
+
+   }
+
    listmascota(): Observable<any>
    {
     return this._http.get('http://localhost:3000/aedmascota');

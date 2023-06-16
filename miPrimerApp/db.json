@@ -18,20 +18,15 @@
   },
   "aedmascota": [
     {
-      "nombre": "gaston",
+      "nombre": "gastonCamba",
       "edad": 12,
       "raza": "pollo",
+      "sexo": "",
+      "especie": "",
+      "color": "",
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
       "peso": 111,
-      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
       "id": 4
-    },
-    {
-      "nombre": "Gaston",
-      "edad": 32,
-      "raza": "Veremos",
-      "peso": 145,
-      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
-      "id": 5
     },
     {
       "nombre": "Gaston",
@@ -283,6 +278,105 @@
       "fechaDeNacimiento": "2023-06-19T03:00:00.000Z",
       "peso": 12.5,
       "id": 37
+    },
+    {
+      "nombre": "Final",
+      "edad": 45,
+      "raza": "Rubia",
+      "sexo": "macho",
+      "especie": "Queso",
+      "color": "Amarillo",
+      "fechaDeNacimiento": "2023-06-18T03:00:00.000Z",
+      "peso": 13.05,
+      "id": 38
+    },
+    {
+      "nombre": "xdsfd",
+      "edad": 232,
+      "raza": "3fddfd",
+      "sexo": "macho",
+      "especie": "32edd",
+      "color": "dfdf",
+      "fechaDeNacimiento": "2023-06-25T03:00:00.000Z",
+      "peso": 232232,
+      "id": 39
+    },
+    {
+      "nombre": "GastonCambiado",
+      "edad": 12,
+      "raza": "pollo",
+      "sexo": "macho",
+      "especie": "sslslsl",
+      "color": "slslsl",
+      "fechaDeNacimiento": "2023-06-26T03:00:00.000Z",
+      "peso": 123,
+      "id": 40
+    },
+    {
+      "nombre": "cambiado",
+      "edad": 122,
+      "raza": "cambiado",
+      "sexo": "macho",
+      "especie": "cambiado",
+      "color": "cambiado",
+      "fechaDeNacimiento": "2023-06-19T03:00:00.000Z",
+      "peso": 1223,
+      "id": 41
+    },
+    {
+      "nombre": "gastonCambiado",
+      "edad": 12,
+      "raza": "pollo",
+      "sexo": "",
+      "especie": "",
+      "color": "",
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "peso": 111,
+      "id": 42
+    },
+    {
+      "nombre": "gastonCambiado",
+      "edad": 123,
+      "raza": "pollo",
+      "sexo": "",
+      "especie": "",
+      "color": "",
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "peso": 111,
+      "id": 43
+    },
+    {
+      "nombre": "gastonCambiado",
+      "edad": 12,
+      "raza": "pollo",
+      "sexo": "",
+      "especie": "",
+      "color": "",
+      "fechaDeNacimiento": "2023-06-20T03:00:00.000Z",
+      "peso": 111,
+      "id": 44
+    },
+    {
+      "nombre": "cdsfdsf",
+      "edad": 2323,
+      "raza": "sdsds",
+      "sexo": "macho",
+      "especie": "33sdsd",
+      "color": "sdsdsd",
+      "fechaDeNacimiento": "2023-06-19T03:00:00.000Z",
+      "peso": 33333,
+      "id": 45
+    },
+    {
+      "nombre": "Gaston41Modificacion",
+      "edad": 123,
+      "raza": "Prueba",
+      "sexo": "macho",
+      "especie": "Prueba",
+      "color": "Pink",
+      "fechaDeNacimiento": "2023-06-07T03:00:00.000Z",
+      "peso": 1223,
+      "id": 46
     }
   ]
 }
