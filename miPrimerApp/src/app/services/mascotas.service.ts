@@ -12,7 +12,7 @@ export class MascotasService {
 
   Aedmascota(data:any):Observable<any>
    {
-   return this._http.post('http://localhost:3000/aedmascota',data);
+   return this._http.post('http://localhost:8080/api/v1/mascotas',data);
 
    }
 
@@ -25,7 +25,7 @@ export class MascotasService {
 
    listmascota(): Observable<any>
    {
-    return this._http.get('http://localhost:3000/aedmascota');
+    return this._http.get('http://localhost:8080/api/v1/mascotas');
    }
 
    deleteMascota(id:number):Observable<any>

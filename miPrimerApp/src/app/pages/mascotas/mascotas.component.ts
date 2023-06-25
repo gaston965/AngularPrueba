@@ -27,7 +27,7 @@ export interface MascotaInterface {
 })
 export class MascotasComponent implements OnInit {
 
-  displayedColumns: string[] = [ 'Nombre', 'Edad', 'Raza','Especie','Color','FechaDeNacimiento','Sexo','Peso','Acciones'];
+  displayedColumns: string[] = [ 'Nombre', 'Edad', 'Raza','Especie','Peso','Acciones'];
   dataSource!: MatTableDataSource<MascotaInterface>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -59,7 +59,7 @@ export class MascotasComponent implements OnInit {
   {
     this._empService.listmascota().subscribe({
       next:(res)=> {
-       
+        console.log(res);
       
         this.dataSource = new MatTableDataSource(res);
         // console.log(this.dataSource)
