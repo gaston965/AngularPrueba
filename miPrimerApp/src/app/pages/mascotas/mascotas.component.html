@@ -106,6 +106,14 @@
                     <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
                   </tr>
                 </table>
+                <div class="align-items-center mb-0" *ngIf="!this.dataSource">
+                  <ng-container>
+                    <h2 class="text-uppercase text-secondary text-sm text-center font-weight-bolder opacity-7 pt-3"> Aun no posee mascotas asociadas</h2>
+
+                  </ng-container>
+
+
+                </div> 
                 </div>
                 <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
               </div>
